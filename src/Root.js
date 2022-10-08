@@ -17,7 +17,7 @@ class Root extends Component {
 
      render() {
           return (
-               <div className="bg-dark vw-100 h-100">
+               <div className="bg-dark w-100 h-100">
                     <Navbar />
                          <BrowserRouter>
                               <Routes>
