@@ -23,7 +23,7 @@ export default function Navbar(){
                 <Link className="nav-link" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item me-4 ">
-                <Link className="nav-link" to="/dashboard/world">Dashboard</Link>
+                <Link className="nav-link" to="/dashboard/stock">Dashboard</Link>
               </li>
               <li className="nav-item me-4 ">
                 <Link className="nav-link" to="/about">About Us</Link>
