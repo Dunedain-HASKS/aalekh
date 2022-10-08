@@ -1,0 +1,59 @@
+  /* Button */
+  .button {
+    width: max-content;
+    padding: .3rem 0.5rem;
+    font-size: 1rem;
+    color: royalblue;
+    background-color: transparent;
+    position: relative;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+  }
+  
+  .button span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid royalblue;
+    z-index: -1;
+  }
+  
+  .button span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8%;
+    height: 500%;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all .4s ease-in-out;
+  }
+  
+  /* What After Hovering The Button */
+  .button:hover span::after,
+  .button:focus span::after {
+    background-color: royalblue;
+    width: 100%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+  
+  .button:hover,
+  .button:focus {
+    color: #fff;
+  }
+
+  /*page header*/
+  /* .page-header { 
+    background: url(https://th.bing.com/th/id/OIP.YVRiaD6eDllAPQA9-tjVFQHaE8?pid=ImgDet&rs=1)no-repeat; 
+    width: 190px;
+    height: 300px;
+    position: relative; 
+    background-size: cover; 
+} */
