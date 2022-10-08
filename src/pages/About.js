@@ -17,7 +17,7 @@ function About() {
       <div className="row-1">
         <div className="column">
           <div className="card">
-            {/* <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> */}
+            
             <div className="container">
               <h2>Anuj Contractor</h2>
               <p className="title">Frontend Developer</p>
