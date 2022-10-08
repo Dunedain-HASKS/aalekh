@@ -11,24 +11,6 @@ const navigation = [
 export default function Navbar(){
     return(
         <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-            {/* {navigation.map((item) => (
-                <NavLink
-                    key={item.name}
-                    to={item.href}
-                    className={({
-                        isActive,
-                    }) => {
-                        return (
-                            'px-3 py-2 rounded-md text-sm font-medium no-underline ' +
-                            (!isActive
-                                ? ' text-gray-300 hover:bg-gray-700 hover:text-white'
-                                : 'bg-gray-900 text-white')
-                        );
-                    }}
-                >
-                    {item.name}
-                </NavLink>
-            ))} */}
         <div className="container-fluid">
           <a className="navbar-brand" href="/">Aalekh</a>
           <button
