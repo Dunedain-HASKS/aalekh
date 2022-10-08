@@ -1,10 +1,8 @@
-import './style/style.css';
+import './style/App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Component } from 'react';
-import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Error from './pages/Error';
-import Settings from './pages/Settings';
 import About from './pages/About';
 
 class Root extends Component {
@@ -13,17 +11,18 @@ class Root extends Component {
           this.state = {
 
           };
-     }
+     };
+
      render() {
           return (
-               <div className="d-flex flex-row bg-black">
+               <div className="bg-dark container container fluid vh-100 vw-100">
                     <BrowserRouter>
-                         <Navbar />
                          <Routes>
                               <Route path="/" element={<Home />} />
                               <Route path="/about" element={<About />} />
                               <Route path="*" element={<Error />} />
                          </Routes>
+                         <button onClick={this.testfunc}>Test</button>
                     </BrowserRouter>
                </div>
           );
