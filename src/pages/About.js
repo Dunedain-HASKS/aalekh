@@ -78,7 +78,7 @@ function About() {
             {/* <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> */}
             <div className="container">
               <h2>Shivang Kacha</h2>
-              <p className="title">Contenet Designer</p>
+              <p className="title">Content Designer</p>
               <p>We develope what we see.</p>
               <p>shivangkachasbk9@gmail.com</p>
               <p>
