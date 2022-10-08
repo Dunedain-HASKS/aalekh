@@ -10,10 +10,10 @@ function Home() {
             </div>
 
 
-    <div id="intro" class="bg-image shadow-2-strong">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col"></div>
+    <div id="intro" className="bg-image shadow-2-strong">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col"></div>
         </div>
 
         <div className="row">

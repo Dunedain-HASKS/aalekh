@@ -24,7 +24,7 @@ class Root extends Component {
                                    <Route path="/" element={<Home />} />
                                    <Route path="/about" element={<About />} />
                                    <Route path="*" element={<Error />} />
-                                   <Route path="/dashboard" element={<Dashboard />} />
+                                   <Route path="/dashboard/:query" element={<Dashboard />} />
                               </Routes>
                     </BrowserRouter>
                </div>
