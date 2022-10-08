@@ -11,16 +11,18 @@ class Root extends Component {
           this.state = {
 
           };
-     }
+     };
+
      render() {
           return (
-               <div className="d-flex flex-row bg-black">
+               <div className="bg-dark container container fluid vh-100 vw-100">
                     <BrowserRouter>
                          <Routes>
                               <Route path="/" element={<Home />} />
                               <Route path="/about" element={<About />} />
                               <Route path="*" element={<Error />} />
                          </Routes>
+                         <button onClick={this.testfunc}>Test</button>
                     </BrowserRouter>
                </div>
           );
