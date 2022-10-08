@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import './About.css';
 
 function About(){
@@ -39,7 +39,7 @@ function About(){
                     <p>We develope what we see.</p>
                     <p>harshal2804@gmail.com</p>
                     <p>
-                        <form action="https://www.linkedin.com/in/anuj-contractor-60bb3222a/"> 
+                        <form action="https://www.linkedin.com/in/harshal-patel-0b61aa24b"> 
                             <button className="button" type="submit">Contact</button>
                         </form>
                     </p>
@@ -104,28 +104,4 @@ function About(){
 }
 
 export default About;
-=======
-import '../style/App.css';
 
-function App() {
-     return (
-          <div className="App">
-               <header className="App-header container container fluid bg-dark">
-                    <p>
-                         Edit <code>src/App.js</code> and save to reload.
-                    </p>
-                    <a
-                         className="App-link"
-                         href="https://reactjs.org"
-                         target="_blank"
-                         rel="noopener noreferrer"
-                    >
-                         Learn React
-                    </a>
-               </header>
-          </div>
-     );
-}
-
-export default App;
->>>>>>> a96b525ee34063ee8bfc5ab095f8c9292907e6a2
