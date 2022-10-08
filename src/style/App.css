@@ -1,17 +1,15 @@
-
-
 @import url("~bootstrap/dist/css/bootstrap.min.css");
 
-
-.App{
-    background-image: url("https://wallpapercave.com/wp/wp6959488.png");
-    height: 100vh;
-
-    background-size: cover;
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+.App {
+  background-image: url("https://wallpapercave.com/wp/wp6959488.png");
+  height: 100vh;
+  font-family: 'Itim', cursive;
+  background-size: cover;
 }
 
 @media (min-width: 992px) {
-    #intro {
-      margin-top: -58.59px;
-    }
+  #intro {
+    margin-top: -58.59px;
   }
+}
