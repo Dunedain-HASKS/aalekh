@@ -6,16 +6,12 @@ function Home() {
   let [query , setQuery] = useState('');
   return (
      <>
-    <div className="App">
-            </div>
-
-
     <div id="intro" className="bg-image shadow-2-strong">
       <div className="container-fluid">
         <div className="row">
           <div className="col"></div>
         </div>
-
+        
         <div className="row">
           <form
             className="col-6 mx-auto position-absolute top-50 start-50 translate-middle"
