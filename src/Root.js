@@ -15,8 +15,9 @@ class Root extends Component {
 
      render() {
           return (
-               <div className="bg-dark container container fluid vh-100 vw-100">
+               <div className="bg-success container container-fluid vh-max vw-max" >
                     <BrowserRouter>
+
                          <Routes>
                               <Route path="/" element={<Home />} />
                               <Route path="/about" element={<About />} />
