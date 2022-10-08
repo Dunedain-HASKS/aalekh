@@ -18,8 +18,9 @@ class Root extends Component {
      render() {
           return (
                <div className="bg-dark w-100 h-100">
-                    <Navbar />
-                         <BrowserRouter>
+                    
+                    <BrowserRouter>
+                         <Navbar />
                               <Routes>
                                    <Route path="/" element={<Home />} />
                                    <Route path="/about" element={<About />} />

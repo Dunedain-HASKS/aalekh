@@ -19,12 +19,11 @@ function newsCard(news) {
      d = String(d).slice(0, 21);
 
      return (
-          <div className="card text-dark mb-5 border border-5 border-primary shadow bg-body rounded" key={news.title}>
-               <img src={news.urlToImage} className="card-img" alt="..." />
-               <div className="card-img-overlay">
-                    <div className="card-title bg-dark opacity-75 p-3 text-center"><h2 className=" display-2 text-bg-dark">{news.title}</h2></div>
-                    <p className="card-text display-5">{news.description} </p>
-                    <p className="card-text">  </p>
+          <div className="card" key={news.title}>
+               <div class="card-header text-center display-3 text-bg-dark">{news.title}</div>
+               <img src={news.urlToImage} className="card-img-top" alt="..." />
+               <div className="card-body">
+                    <p className="card-text display-5 bg-dark p-4 rounded">{news.description} </p>
                     <a href={news.url} className="btn btn-primary">Read More</a>
                </div>
                <div class="card-footer text-end h4">
