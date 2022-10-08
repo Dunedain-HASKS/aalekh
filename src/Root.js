@@ -26,7 +26,6 @@ class Root extends Component {
                                    <Route path="*" element={<Error />} />
                                    <Route path="/dashboard" element={<Dashboard />} />
                               </Routes>
-                         {/* <button onClick={this.testfunc}>Test</button> */}
                     </BrowserRouter>
                </div>
           );
