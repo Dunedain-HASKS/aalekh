@@ -23,8 +23,8 @@ function Home() {
           >
 
             <div className="input-group mb-3">
-              <input type="text" className="form-control" placeholder="Recipient's username" aria-label="Seacrh News" aria-describedby="button-addon" onChange={(e) => {setQuery(e.target.value)}} value={query} />
-              <Link className="btn btn-primary" type="button" id="button-addon" to={`/dashboard/${query}`}> Go </Link>
+              <input type="text" className="form-control" placeholder="Search for topics here" aria-label="Seacrh News" aria-describedby="button-addon" onChange={(e) => {setQuery(e.target.value)}} value={query} />
+              <Link className="btn btn-warning" type="button" id="button-addon" to={`/dashboard/${query}`}> Go </Link>
             </div>
           </form>
         </div>
