@@ -7,7 +7,7 @@ function Home() {
     <div className="App">
       <div
         id="intro"
-        className="bg-image bg-opacity-25 bg-dark shadow-2-strong"
+        className="bg-image bg-blur-5 bg-opacity-25 bg-dark shadow-2-strong"
       >
         <div className="container-fluid">
           <div className="row">
@@ -15,7 +15,7 @@ function Home() {
           </div>
 
           <div className="container d-flex flex-column justify-content-center vh-100 gy-5">
-            <h1 className="display-1 mb-2 shadow text-center text-white">
+            <h1 className="display-1 mb-2 shadow text-center gor">
               AALEKH
             </h1>
             <form className="col-6 mx-auto" role="search">
@@ -23,7 +23,7 @@ function Home() {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Recipient's username"
+                  placeholder="Search for topics here"
                   aria-label="Seacrh News"
                   aria-describedby="button-addon"
                   onChange={(e) => {
