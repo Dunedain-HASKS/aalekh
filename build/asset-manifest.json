@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aalekh/static/css/main.f491a139.css",
+    "main.js": "/aalekh/static/js/main.26fe5327.js",
+    "static/js/787.47f6f40e.chunk.js": "/aalekh/static/js/787.47f6f40e.chunk.js",
+    "index.html": "/aalekh/index.html",
+    "main.f491a139.css.map": "/aalekh/static/css/main.f491a139.css.map",
+    "main.26fe5327.js.map": "/aalekh/static/js/main.26fe5327.js.map",
+    "787.47f6f40e.chunk.js.map": "/aalekh/static/js/787.47f6f40e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f491a139.css",
+    "static/js/main.26fe5327.js"
+  ]
+}

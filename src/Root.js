@@ -1,5 +1,5 @@
 import './style/App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Component } from 'react';
 import Home from './pages/Home';
 import Error from './pages/Error';
@@ -20,7 +20,7 @@ class Root extends Component {
           return (
                <div className="bg-dark w-100 h-100">
                     
-                    <BrowserRouter>
+                    <HashRouter>
                          <Navbar />
                               <Routes>
                                    <Route path="/" element={<Home />} />
@@ -29,7 +29,7 @@ class Root extends Component {
                                    <Route path="*" element={<Error />} />
                                    <Route path="/dashboard/:query" element={<Dashboard />} />
                               </Routes>
-                    </BrowserRouter>
+                    </HashRouter>
                </div>
           );
      }
