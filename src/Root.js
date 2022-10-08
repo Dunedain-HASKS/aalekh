@@ -4,7 +4,9 @@ import { Component } from 'react';
 import Home from './pages/Home';
 import Error from './pages/Error';
 import About from './pages/About';
+import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
+
 class Root extends Component {
      constructor(props) {
           super(props);
@@ -15,14 +17,15 @@ class Root extends Component {
 
      render() {
           return (
-               <div className="bg-dark vw-100 vh-100">
-                    <BrowserRouter>
-                         <Routes>
-                              <Route path="/" element={<Home />} />
-                              <Route path="/about" element={<About />} />
-                              <Route path="/dashboard/:query" element={<Dashboard />} />
-                              <Route path="*" element={<Error />} />
-                         </Routes>
+               <div className="bg-dark w-100 h-100">
+                    <Navbar />
+                         <BrowserRouter>
+                              <Routes>
+                                   <Route path="/" element={<Home />} />
+                                   <Route path="/about" element={<About />} />
+                                   <Route path="*" element={<Error />} />
+                                   <Route path="/dashboard" element={<Dashboard />} />
+                              </Routes>
                     </BrowserRouter>
                </div>
           );
