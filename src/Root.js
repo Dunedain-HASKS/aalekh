@@ -4,6 +4,7 @@ import { Component } from 'react';
 import Home from './pages/Home';
 import Error from './pages/Error';
 import About from './pages/About';
+import Navbar from './components/Navbar';
 
 class Root extends Component {
      constructor(props) {
@@ -16,14 +17,14 @@ class Root extends Component {
      render() {
           return (
                <div className="bg-success container container-fluid vh-max vw-max" >
-                    <BrowserRouter>
-
-                         <Routes>
-                              <Route path="/" element={<Home />} />
-                              <Route path="/about" element={<About />} />
-                              <Route path="*" element={<Error />} />
-                         </Routes>
-                         <button onClick={this.testfunc}>Test</button>
+                    <Navbar />
+                         <BrowserRouter>
+                              <Routes>
+                                   <Route path="/" element={<Home />} />
+                                   <Route path="/about" element={<About />} />
+                                   <Route path="*" element={<Error />} />
+                              </Routes>
+                         {/* <button onClick={this.testfunc}>Test</button> */}
                     </BrowserRouter>
                </div>
           );

@@ -7,7 +7,7 @@ function App() {
      return (
           <div className="App">
                {/* <About /> */}
-               <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+               {/* <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Aalekh</a>
         <button
@@ -40,7 +40,7 @@ function App() {
           </form>
         </div>
       </div>
-    </nav>
+    </nav> */}
     <div id="intro" class="bg-image shadow-2-strong">
       <div class="container-fluid">
         <div class="row">
