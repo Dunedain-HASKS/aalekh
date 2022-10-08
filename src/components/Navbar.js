@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 
 const navigation = [
-    { name: 'Home', href: '../pages/Home.js' },
-    { name: 'About', href: '../pages/About.js' },
-    { name: '', href: '../pages/Error.js' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Error', href: '.' },
 ];
 
 export default function Navbar(){
@@ -30,7 +30,7 @@ export default function Navbar(){
                 </NavLink>
             ))} */}
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Aalekh</a>
+          <a className="navbar-brand" href="/">Aalekh</a>
           <button
             className="navbar-toggler"
             type="button"
@@ -45,13 +45,13 @@ export default function Navbar(){
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                <a className="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Dashboard</a>
+                <a className="nav-link" href="/dashboard">Dashboard</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">About Us</a>
+                <a className="nav-link" href="/about">About Us</a>
               </li>
              
             </ul>
