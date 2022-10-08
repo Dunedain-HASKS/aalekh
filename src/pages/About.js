@@ -12,7 +12,7 @@ function About() {
         </p>
       </div>
 
-      <h2 className="anuj d-flex flex-column align-items-center">Our Team</h2>
+      <h2 className="anuj d-flex flex-column align-items-center text-white">Our Team</h2>
 
       <div className="row-1">
         <div className="column">
