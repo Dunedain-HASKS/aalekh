@@ -5,6 +5,11 @@ function About() {
     <>
       <div className="about-section">
         <h1>About Us</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>
+          Resize the browser window to see that this page is responsive by the
+          way.
+        </p>
       </div>
 
       <h2 className="anuj d-flex flex-column align-items-center text-white">Our Team</h2>
@@ -12,7 +17,7 @@ function About() {
       <div className="row-1">
         <div className="column">
           <div className="card">
-            
+
             <div className="container">
               <h2>Anuj Contractor</h2>
               <p className="title">Frontend Developer</p>
@@ -36,7 +41,7 @@ function About() {
               <h2>Harshal Patel</h2>
               <p className="title">Researcher</p>
               <p>We develope what we see.</p>
-              <p>harshal5820@gmail.com</p>
+              <p>harshal2804@gmail.com</p>
               <p>
                 <form action="https://www.linkedin.com/in/harshal-patel-0b61aa24b">
                   <button className="button" type="submit">
