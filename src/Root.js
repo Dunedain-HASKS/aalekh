@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Error from './pages/Error';
 import About from './pages/About';
 import Navbar from './components/Navbar';
+import Dashboard from './pages/Dashboard';
 
 class Root extends Component {
      constructor(props) {
@@ -23,6 +24,7 @@ class Root extends Component {
                                    <Route path="/" element={<Home />} />
                                    <Route path="/about" element={<About />} />
                                    <Route path="*" element={<Error />} />
+                                   <Route path="/dashboard" element={<Dashboard />} />
                               </Routes>
                          {/* <button onClick={this.testfunc}>Test</button> */}
                     </BrowserRouter>
