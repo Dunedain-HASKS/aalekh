@@ -1,76 +1,100 @@
 import "../style/button.css"
-import $ from 'jquery';
-window.$ = $;
+import { useState,useEffect } from "react";
+const getCrypto = async () => {
+  const response = await fetch("https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,USDT,USDC,BNB,XRP,BUSD,ADA,SOL,DOGE,DOT,MATIC,DAI,WTRX,SHIB&tsyms=BTC,USD,EUR&api_key=651e0d7a8089a949d3b41dc638c5655849febebe8d9463266c909a4d8a595bfc");
+  const data = await response.json();
+  return data;
+};
 
-$.getJSON(
-    "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,USDT,USDC,BNB,XRP,BUSD,ADA,SOL,DOGE,DOT,MATIC,DAI,WTRX,SHIB&tsyms=BTC,USD,EUR&api_key=651e0d7a8089a949d3b41dc638c5655849febebe8d9463266c909a4d8a595bfc",
-    function(data){
-        $(".1btc").append(data.BTC.BTC);
-        $(".1usd").append(data.BTC.USD);
-        $(".1eur").append(data.BTC.EUR);
-
-        $(".2btc").append(data.ETH.BTC);
-        $(".2usd").append(data.ETH.USD);
-        $(".2eur").append(data.ETH.EUR);
-        
-        $(".3btc").append(data.USDT.BTC);
-        $(".3usd").append(data.USDT.USD);
-        $(".3eur").append(data.USDT.EUR);
-
-        $(".4btc").append(data.USDC.BTC);
-        $(".4usd").append(data.USDC.USD);
-        $(".4eur").append(data.USDC.EUR);
-
-        $(".5btc").append(data.BNB.BTC);
-        $(".5usd").append(data.BNB.USD);
-        $(".5eur").append(data.BNB.EUR);
-
-        $(".6btc").append(data.XRP.BTC);
-        $(".6usd").append(data.XRP.USD);
-        $(".6eur").append(data.XRP.EUR);
-
-        $(".7btc").append(data.BUSD.BTC);
-        $(".7usd").append(data.BUSD.USD);
-        $(".7eur").append(data.BUSD.EUR);
-
-        $(".8btc").append(data.ADA.BTC);
-        $(".8usd").append(data.ADA.USD);
-        $(".8eur").append(data.ADA.EUR);
-
-        $(".9btc").append(data.SOL.BTC);
-        $(".9usd").append(data.SOL.USD);
-        $(".9eur").append(data.SOL.EUR);
-
-        $(".10btc").append(data.DOGE.BTC);
-        $(".10usd").append(data.DOGE.USD);
-        $(".10eur").append(data.DOGE.EUR);
+function Crypto() {
+  const [crypto, setCrypto] = useState({
+    "BTC": {
+      "BTC": 1,
+      "USD": 19431.43,
+      "EUR": 19950.01
+    },
+    "ETH": {
+      "BTC": 0.06811,
+      "USD": 1323.12,
+      "EUR": 1358.98
+    },
+    "USDT": {
+      "BTC": 0.00005147,
+      "USD": 1,
+      "EUR": 1.027
+    },
+    "USDC": {
+      "BTC": 0.00005144,
+      "USD": 0.9999,
+      "EUR": 1.026
+    },
+    "BNB": {
+      "BTC": 0.01444,
+      "USD": 280.55,
+      "EUR": 288.19
+    },
+    "XRP": {
+      "BTC": 0.0000267,
+      "USD": 0.5185,
+      "EUR": 0.5334
+    },
+    "BUSD": {
+      "BTC": 0.00005147,
+      "USD": 1,
+      "EUR": 1.027
+    },
+    "ADA": {
+      "BTC": 0.00002176,
+      "USD": 0.4231,
+      "EUR": 0.4349
+    },
+    "SOL": {
+      "BTC": 0.001684,
+      "USD": 32.73,
+      "EUR": 33.59
+    },
+    "DOGE": {
+      "BTC": 0.00000319,
+      "USD": 0.06207,
+      "EUR": 0.06375
+    },
+    "DOT": {
+      "BTC": 0.0003254,
+      "USD": 6.32,
+      "EUR": 6.501
+    },
+    "MATIC": {
+      "BTC": 0.00004195,
+      "USD": 0.8152,
+      "EUR": 0.8371
+    },
+    "DAI": {
+      "BTC": 0.00005146,
+      "USD": 0.9998,
+      "EUR": 1.027
+    },
+    "SHIB": {
+      "BTC": 6e-10,
+      "USD": 0.00001103,
+      "EUR": 0.00001133
     }
-);
+  });
 
-
-function Info() {
-
+  useEffect(() => {
+    getCrypto().then((data) => {
+      setCrypto(data);
+      console.log(data);
+    });
+  },[]);
   return (
     <>
-    <body class="hm-gradient">
-    {/* <div class="page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="page-caption">
-                        <h1 class="page-title">Hike Pageheader</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> */}
       <main>
-        <div class="container mt-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <table class="table table-hover">
-                <thead class="mdb-color darken-3">
-                  <tr class="text-black">
+        <div className="container mt-4">
+          <div className="card mb-4">
+            <div className="card-body">
+              <table className="table table-hover">
+                <thead className="mdb-color darken-3">
+                  <tr className="text-black">
                     <th>#</th>
                     <th>Logo</th>
                     <th>Name</th>
@@ -88,12 +112,12 @@ function Info() {
                     <td><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=023" width="35px" height="35px"></img></td>
                     <td>Bitcoin</td>
                     <td>BTC</td>
-                    <td class="1btc"></td>
-                    <td class="1usd"></td>
-                    <td class="1eur"></td>
+                    <td> {crypto.BTC.BTC} </td>
+                    <td> {crypto.BTC.USD} </td>
+                    <td> {crypto.BTC.EUR} </td>
                     <td>
                     <a href="https://www.google.com/finance/quote/BTC-USD">
-                    <button class="button">Click Here<span></span></button>
+                    <button className="button">Click Here<span></span></button>
                     </a>
                     </td>
                   </tr>
@@ -102,12 +126,12 @@ function Info() {
                     <td><img src="https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023" width="35px" height="35px"></img></td>
                     <td>Ethereum</td>
                     <td>ETH</td>
-                    <td class="2btc"></td>
-                    <td class="2usd"></td>
-                    <td class="2eur"></td>
+                    <td> {crypto.ETH.BTC} </td>
+                    <td> {crypto.ETH.USD} </td>
+                    <td> {crypto.ETH.EUR} </td>
                     <td>
                     <a href="https://www.google.com/finance/quote/ETH-USD">
-                    <button class="button">Click Here<span></span></button>
+                    <button className="button">Click Here<span></span></button>
                     </a>
                     </td>
                   </tr>
@@ -116,12 +140,12 @@ function Info() {
                     <td><img src="https://cryptologos.cc/logos/tether-usdt-logo.svg?v=023" width="35px" height="35px"></img></td>
                     <td>Tether</td>
                     <td>USDT</td>
-                    <td class="3btc"></td>
-                    <td class="3usd"></td>
-                    <td class="3eur"></td>
+                    <td> {crypto.USDT.BTC} </td>
+                    <td> {crypto.USDT.USD} </td>
+                    <td> {crypto.USDT.EUR} </td>
                     <td>
                     <a href="https://www.google.com/finance/quote/USDT-USD">
-                    <button class="button">Click Here<span></span></button>
+                    <button className="button">Click Here<span></span></button>
                     </a>
                     </td>
                   </tr>
@@ -130,12 +154,12 @@ function Info() {
                     <td><img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.svg?v=023" width="35px" height="35px"></img></td>
                     <td>USD Coin</td>
                     <td>USDC</td>
-                    <td class="4btc"></td>
-                    <td class="4usd"></td>
-                    <td class="4eur"></td>
+                    <td> {crypto.USDC.BTC} </td>
+                    <td> {crypto.USDC.USD} </td>
+                    <td> {crypto.USDC.EUR} </td>
                     <td>
                     <a href="https://www.google.com/finance/quote/USDC-USD">
-                    <button class="button">Click Here<span></span></button>
+                    <button className="button">Click Here<span></span></button>
                     </a>
                     </td>
                   </tr>
@@ -144,12 +168,12 @@ function Info() {
                     <td><img src="https://cryptologos.cc/logos/bnb-bnb-logo.svg?v=023" width="35px" height="35px"></img></td>
                     <td>BNB</td>
                     <td>BNB</td>
-                    <td class="5btc"></td>
-                    <td class="5usd"></td>
-                    <td class="5eur"></td>
+                    <td> {crypto.BNB.BTC} </td>
+                    <td> {crypto.BNB.USD} </td>
+                    <td> {crypto.BNB.EUR} </td>
                     <td>
                     <a href="https://www.google.com/finance/quote/BNB-USD">
-                    <button class="button">Click Here<span></span></button>
+                    <button className="button">Click Here<span></span></button>
                     </a>
                     </td>
                   </tr>
@@ -158,12 +182,12 @@ function Info() {
                     <td><img src="https://cryptologos.cc/logos/xrp-xrp-logo.svg?v=023" width="35px" height="35px"></img></td>
                     <td>XRP</td>
                     <td>XRP</td>
-                    <td class="6btc"></td>
-                    <td class="6usd"></td>
-                    <td class="6eur"></td>
+                    <td> {crypto.XRP.BTC} </td>
+                    <td> {crypto.XRP.USD} </td>
+                    <td> {crypto.XRP.EUR} </td>
                     <td>
                     <a href="https://www.google.com/finance/quote/XRP-USD">
-                    <button class="button">Click Here<span></span></button>
+                    <button className="button">Click Here<span></span></button>
                     </a>
                     </td>
                   </tr>
@@ -172,12 +196,12 @@ function Info() {
                     <td><img src="https://cryptologos.cc/logos/binance-usd-busd-logo.svg?v=023" width="35px" height="35px"></img></td>
                     <td>Binance USD</td>
                     <td>BUSD</td>
-                    <td class="7btc"></td>
-                    <td class="7usd"></td>
-                    <td class="7eur"></td>
+                    <td> {crypto.BUSD.BTC} </td>
+                    <td> {crypto.BUSD.USD} </td>
+                    <td> {crypto.BUSD.EUR} </td>
                     <td>
                     <a href="https://www.google.com/finance/quote/BUSD-USD">
-                    <button class="button">Click Here<span></span></button>
+                    <button className="button">Click Here<span></span></button>
                     </a>
                     </td>
                   </tr>
@@ -186,12 +210,12 @@ function Info() {
                     <td><img src="https://cryptologos.cc/logos/cardano-ada-logo.svg?v=023" width="35px" height="35px"></img></td>
                     <td>Cardano</td>
                     <td>ADA</td>
-                    <td class="8btc"></td>
-                    <td class="8usd"></td>
-                    <td class="8eur"></td>
+                    <td> {crypto.ADA.BTC} </td>
+                    <td> {crypto.ADA.USD} </td>
+                    <td> {crypto.ADA.EUR} </td>
                     <td>
                     <a href="https://www.google.com/finance/quote/ADA-USD">
-                    <button class="button">Click Here<span></span></button>
+                    <button className="button">Click Here<span></span></button>
                     </a>
                     </td>
                   </tr>
@@ -200,12 +224,12 @@ function Info() {
                     <td><img src="https://cryptologos.cc/logos/solana-sol-logo.svg?v=023" width="35px" height="35px"></img></td>
                     <td>Solana</td>
                     <td>SOL</td>
-                    <td class="9btc"></td>
-                    <td class="9usd"></td>
-                    <td class="9eur"></td>
+                    <td> {crypto.SOL.BTC} </td>
+                    <td> {crypto.SOL.USD} </td>
+                    <td> {crypto.SOL.EUR} </td>
                     <td>
                     <a href="https://www.google.com/finance/quote/SOL-USD">
-                    <button class="button">Click Here<span></span></button>
+                    <button className="button">Click Here<span></span></button>
                     </a>
                     </td>
                   </tr>
@@ -214,12 +238,12 @@ function Info() {
                     <td><img src="https://cryptologos.cc/logos/dogecoin-doge-logo.svg?v=023" width="35px" height="35px"></img></td>
                     <td>Dogecoin</td>
                     <td>DOGE</td>
-                    <td class="10btc"></td>
-                    <td class="10usd"></td>
-                    <td class="10eur"></td>
+                    <td> {crypto.DOGE.BTC} </td>
+                    <td> {crypto.DOGE.USD} </td>
+                    <td> {crypto.DOGE.EUR} </td>
                     <td>
                     <a href="https://www.google.com/finance/quote/DOGE-USD">
-                    <button class="button">Click Here<span></span></button>
+                    <button className="button">Click Here<span></span></button>
                     </a>
                     </td>
                   </tr>
@@ -229,10 +253,9 @@ function Info() {
           </div>
         </div>
       </main>
-    </body>
     </>
   );
 }
 
 
-export default Info;
+export default Crypto;

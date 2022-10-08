@@ -29,7 +29,7 @@ export default function Navbar(){
                 <Link className="nav-link" to="/about">About Us</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/info">Info</Link>
+                <Link className="nav-link" to="/crypto"> Crypto </Link>
               </li>
              
             </ul>
