@@ -17,7 +17,6 @@ class Root extends Component {
           return (
                <div className="bg-dark vw-100 vh-100">
                     <BrowserRouter>
-
                          <Routes>
                               <Route path="/" element={<Home />} />
                               <Route path="/about" element={<About />} />
