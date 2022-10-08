@@ -1,5 +1,5 @@
 import "../style/button.css"
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 const getCrypto = async () => {
   const response = await fetch("https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,USDT,USDC,BNB,XRP,BUSD,ADA,SOL,DOGE,DOT,MATIC,DAI,WTRX,SHIB&tsyms=BTC,USD,EUR&api_key=651e0d7a8089a949d3b41dc638c5655849febebe8d9463266c909a4d8a595bfc");
   const data = await response.json();
@@ -85,7 +85,7 @@ function Crypto() {
       setCrypto(data);
       console.log(data);
     });
-  },[]);
+  }, []);
   return (
     <>
       <main>
@@ -116,9 +116,9 @@ function Crypto() {
                     <td> {crypto.BTC.USD} </td>
                     <td> {crypto.BTC.EUR} </td>
                     <td>
-                    <a href="https://www.google.com/finance/quote/BTC-USD">
-                    <button className="button">Click Here<span></span></button>
-                    </a>
+                      <a href="https://www.google.com/finance/quote/BTC-USD">
+                        <button className="button">Click Here<span></span></button>
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -130,9 +130,9 @@ function Crypto() {
                     <td> {crypto.ETH.USD} </td>
                     <td> {crypto.ETH.EUR} </td>
                     <td>
-                    <a href="https://www.google.com/finance/quote/ETH-USD">
-                    <button className="button">Click Here<span></span></button>
-                    </a>
+                      <a href="https://www.google.com/finance/quote/ETH-USD">
+                        <button className="button">Click Here<span></span></button>
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -144,9 +144,9 @@ function Crypto() {
                     <td> {crypto.USDT.USD} </td>
                     <td> {crypto.USDT.EUR} </td>
                     <td>
-                    <a href="https://www.google.com/finance/quote/USDT-USD">
-                    <button className="button">Click Here<span></span></button>
-                    </a>
+                      <a href="https://www.google.com/finance/quote/USDT-USD">
+                        <button className="button">Click Here<span></span></button>
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -158,9 +158,9 @@ function Crypto() {
                     <td> {crypto.USDC.USD} </td>
                     <td> {crypto.USDC.EUR} </td>
                     <td>
-                    <a href="https://www.google.com/finance/quote/USDC-USD">
-                    <button className="button">Click Here<span></span></button>
-                    </a>
+                      <a href="https://www.google.com/finance/quote/USDC-USD">
+                        <button className="button">Click Here<span></span></button>
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -172,9 +172,9 @@ function Crypto() {
                     <td> {crypto.BNB.USD} </td>
                     <td> {crypto.BNB.EUR} </td>
                     <td>
-                    <a href="https://www.google.com/finance/quote/BNB-USD">
-                    <button className="button">Click Here<span></span></button>
-                    </a>
+                      <a href="https://www.google.com/finance/quote/BNB-USD">
+                        <button className="button">Click Here<span></span></button>
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -186,9 +186,9 @@ function Crypto() {
                     <td> {crypto.XRP.USD} </td>
                     <td> {crypto.XRP.EUR} </td>
                     <td>
-                    <a href="https://www.google.com/finance/quote/XRP-USD">
-                    <button className="button">Click Here<span></span></button>
-                    </a>
+                      <a href="https://www.google.com/finance/quote/XRP-USD">
+                        <button className="button">Click Here<span></span></button>
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -200,9 +200,9 @@ function Crypto() {
                     <td> {crypto.BUSD.USD} </td>
                     <td> {crypto.BUSD.EUR} </td>
                     <td>
-                    <a href="https://www.google.com/finance/quote/BUSD-USD">
-                    <button className="button">Click Here<span></span></button>
-                    </a>
+                      <a href="https://www.google.com/finance/quote/BUSD-USD">
+                        <button className="button">Click Here<span></span></button>
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -214,9 +214,9 @@ function Crypto() {
                     <td> {crypto.ADA.USD} </td>
                     <td> {crypto.ADA.EUR} </td>
                     <td>
-                    <a href="https://www.google.com/finance/quote/ADA-USD">
-                    <button className="button">Click Here<span></span></button>
-                    </a>
+                      <a href="https://www.google.com/finance/quote/ADA-USD">
+                        <button className="button">Click Here<span></span></button>
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -228,9 +228,9 @@ function Crypto() {
                     <td> {crypto.SOL.USD} </td>
                     <td> {crypto.SOL.EUR} </td>
                     <td>
-                    <a href="https://www.google.com/finance/quote/SOL-USD">
-                    <button className="button">Click Here<span></span></button>
-                    </a>
+                      <a href="https://www.google.com/finance/quote/SOL-USD">
+                        <button className="button">Click Here<span></span></button>
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -242,9 +242,9 @@ function Crypto() {
                     <td> {crypto.DOGE.USD} </td>
                     <td> {crypto.DOGE.EUR} </td>
                     <td>
-                    <a href="https://www.google.com/finance/quote/DOGE-USD">
-                    <button className="button">Click Here<span></span></button>
-                    </a>
+                      <a href="https://www.google.com/finance/quote/DOGE-USD">
+                        <button className="button">Click Here<span></span></button>
+                      </a>
                     </td>
                   </tr>
                 </tbody>

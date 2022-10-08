@@ -35,7 +35,7 @@ function nytNewsCard(news) {
         className="card text-bg-dark  overflow-auto w-100 h-100"
         key={news.uri}
       >
-        <div className="fs-4 p-5">
+        <div className="fs-5 p-3">
           <p className="mx-4">
             Title:
             {` ${news.headline.main.slice(0, 50)}...`}
@@ -75,7 +75,7 @@ function grdNewsCard(news) {
         className="card text-bg-dark  overflow-auto w-100 h-100"
         key={news.uri}
       >
-        <div className="fs-4 p-5">
+        <div className="fs-5 p-3">
           <p className="mx-4">
             Title:
             {` ${news.fields.headline.slice(0, 50)}...`}
