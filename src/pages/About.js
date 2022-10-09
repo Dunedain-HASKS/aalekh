@@ -1,15 +1,19 @@
 import "../style/App.css";
+import anuj_img from "../assets/Anuj.JPEG";
+import harshal_img from "../assets/Harshal.JPG";
+import keyur_img from "../assets/Keyur.JPEG";
+import shivang_img from "../assets/Shivang.png";
+import soham_img from "../assets/Soham.JPG";
 
 function About() {
   return (
     <>
       <div className="about-section abt-image text-dark d-flex flex-column align-items-center ">
         <div className="bg bg-light bg-opacity-50 w-50 ">
-          <h1 className="display-3">About Us</h1>
-          <p>Some text about who we are and what we do.</p>
-          <p>
-            Resize the browser window to see that this page is responsive by the
-            way.
+          <h1 className="display-3 ">About Us</h1>
+          <p><em>
+          Life would be much easier if we had the source code.
+            </em>
           </p>
         </div>
       </div>
@@ -22,6 +26,7 @@ function About() {
         <div className="column">
           <div className="card pt-3">
             <div className="container">
+            <img src={anuj_img} class="float-end img-crc" alt="..."></img>
               <h2>Anuj Contractor</h2>
               <p className="title">Frontend Developer</p>
               <p>We develop what we see</p>
@@ -31,7 +36,7 @@ function About() {
                   target="_blank"
                   action="https://www.linkedin.com/in/anuj-contractor-60bb3222a/"
                 >
-                  <button className="button" type="submit">
+                  <button className="btn btn-dark" type="submit">
                     Contact
                   </button>
                 </form>
@@ -42,10 +47,10 @@ function About() {
 
         <div className="column">
           <div className="card pt-3">
-            {/* <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> */}
             <div className="container">
+            <img src={harshal_img} class="float-end img-crc" alt="..."></img>
               <h2>Harshal Patel</h2>
-              <p className="title">Researcher</p>
+              <p className="title">Frontend Developer</p>
               <p>We develope what we see.</p>
               <p>harshal2804@gmail.com</p>
               <p>
@@ -53,7 +58,7 @@ function About() {
                   target="_blank"
                   action="https://www.linkedin.com/in/harshal-patel-0b61aa24b"
                 >
-                  <button className="button" type="submit">
+                  <button className="btn btn-dark" type="submit">
                     Contact
                   </button>
                 </form>
@@ -63,8 +68,8 @@ function About() {
         </div>
         <div className="column">
           <div className="card pt-3">
-            {/* <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> */}
             <div className="container">
+            <img src={keyur_img} class="float-end img-crc" alt="..."></img>
               <h2>Keyur Govrani</h2>
               <p className="title">Content Designer</p>
               <p>We develope what we see.</p>
@@ -74,7 +79,7 @@ function About() {
                   target="_blank"
                   action="https://www.linkedin.com/in/keyur-govrani-b94277237/"
                 >
-                  <button className="button" type="submit">
+                  <button className="btn btn-dark" type="submit">
                     Contact
                   </button>
                 </form>
@@ -87,8 +92,8 @@ function About() {
       <div className="row-2">
         <div className="column">
           <div className="card pt-3">
-            {/* <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> */}
             <div className="container">
+            <img src={shivang_img} class="float-end img-crc" alt="..."></img>
               <h2>Shivang Kacha</h2>
               <p className="title">Content Designer</p>
               <p>We develope what we see.</p>
@@ -98,7 +103,7 @@ function About() {
                   target="_blank"
                   action="https://www.linkedin.com/in/shivang-kacha-1557a3220/"
                 >
-                  <button className="button" type="submit">
+                  <button className="btn btn-dark" type="submit">
                     Contact
                   </button>
                 </form>
@@ -109,8 +114,8 @@ function About() {
 
         <div className="column">
           <div className="card pt-3">
-            {/* <img src="/w3images/team3.jpg" alt="John" style="width:100%"> */}
             <div className="container">
+            <img src={soham_img} class="float-end img-crc" alt="..."></img>
               <h2>Soham Viradiya</h2>
               <p className="title">System Admin</p>
               <p>We develope what we see.</p>
@@ -120,7 +125,7 @@ function About() {
                   target="_blank"
                   action="https://www.linkedin.com/in/soham-viradiya-362635226/"
                 >
-                  <button className="button" type="submit">
+                  <button className="btn btn-dark" type="submit">
                     Contact
                   </button>
                 </form>

@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 .App {
-  background-image: url("https://wallpapercave.com/wp/wp2128229.jpg");
+  background-image: url("https://www.brandhill.com/wp-content/uploads/2015/01/Brandhill-Web-Background.jpg");
   height: 100vh;
   font-family: "Itim", cursive;
   background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .gor {
-  color: darkblue;
+  font-size: 100px;
 }
 
 .sahil {
@@ -168,6 +168,12 @@ html {
   .button:hover,
   .button:focus {
     color: #fff;
+  }
+
+  .img-crc{
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
   }
 
   /*page header*/

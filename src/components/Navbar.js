@@ -34,9 +34,9 @@ export default function Navbar(){
              
             </ul>
             
-            <form className="d-flex">
+            {/* <form className="d-flex">
               <button className="btn btn-outline-info" type="submit">Login</button>
-            </form>
+            </form> */}
           </div>
         </div>
       </nav>

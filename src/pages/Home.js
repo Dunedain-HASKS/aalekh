@@ -14,8 +14,8 @@ function Home() {
             <div className="col"></div>
           </div>
 
-          <div className="container d-flex flex-column justify-content-center vh-100 gy-5">
-            <h1 className="display-1 mb-2 shadow text-center gor">
+          <div className="container d-flex flex-column justify-content-center vh-100 gy-5 align-items-center">
+            <h1 className="gor mb-2 shadow text-center">
               AALEKH
             </h1>
             <form className="col-6 mx-auto" role="search">

@@ -55,7 +55,7 @@ function nytNewsCard(news) {
             {news.abstract.slice(0, 200)}
             {"..."}
           </p>
-          <a target="_blank" href={news.web_url} className="btn btn-primary">
+          <a target="_blank" href={news.web_url} className="btn btn-info">
             Read More
           </a>
         </div>
@@ -95,7 +95,7 @@ function grdNewsCard(news) {
             {news.fields.bodyText.slice(0, 200)}
             {"..."}
           </p>
-          <a target="_blank" href={news.webUrl} className="btn btn-primary">
+          <a target="_blank" href={news.webUrl} className="btn btn-info">
             Read More
           </a>
         </div>
