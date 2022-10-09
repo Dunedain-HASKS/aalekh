@@ -1,4 +1,4 @@
-import "../style/button.css"
+import "../style/App.css"
 import { useState, useEffect } from "react";
 const getCrypto = async () => {
   const response = await fetch("https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,USDT,USDC,BNB,XRP,BUSD,ADA,SOL,DOGE,DOT,MATIC,DAI,WTRX,SHIB&tsyms=BTC,USD,EUR&api_key=651e0d7a8089a949d3b41dc638c5655849febebe8d9463266c909a4d8a595bfc");
