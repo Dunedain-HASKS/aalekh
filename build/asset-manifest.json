@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/aalekh/static/css/main.159fa28a.css",
-    "main.js": "/aalekh/static/js/main.5aed893a.js",
+    "main.css": "/aalekh/static/css/main.bfbceb98.css",
+    "main.js": "/aalekh/static/js/main.08b58bc7.js",
     "static/js/787.47f6f40e.chunk.js": "/aalekh/static/js/787.47f6f40e.chunk.js",
+    "static/media/Harshal.JPG": "/aalekh/static/media/Harshal.99cd7bd5ad5fbe435d15.JPG",
+    "static/media/Shivang.png": "/aalekh/static/media/Shivang.a4ac1f734b5432c54ac4.png",
+    "static/media/Keyur.JPEG": "/aalekh/static/media/Keyur.71bfdc28c2f93adc3595.JPEG",
+    "static/media/Soham.JPG": "/aalekh/static/media/Soham.9730ad4e8b543c692ec6.JPG",
+    "static/media/Anuj.JPEG": "/aalekh/static/media/Anuj.eae35ad439171d38d4ff.JPEG",
     "index.html": "/aalekh/index.html",
-    "main.159fa28a.css.map": "/aalekh/static/css/main.159fa28a.css.map",
-    "main.5aed893a.js.map": "/aalekh/static/js/main.5aed893a.js.map",
+    "main.bfbceb98.css.map": "/aalekh/static/css/main.bfbceb98.css.map",
+    "main.08b58bc7.js.map": "/aalekh/static/js/main.08b58bc7.js.map",
     "787.47f6f40e.chunk.js.map": "/aalekh/static/js/787.47f6f40e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.159fa28a.css",
-    "static/js/main.5aed893a.js"
+    "static/css/main.bfbceb98.css",
+    "static/js/main.08b58bc7.js"
   ]
 }
