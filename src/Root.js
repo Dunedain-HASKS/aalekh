@@ -7,6 +7,7 @@ import About from './pages/About';
 import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
 import Crypto from './pages/Crypto';
+import Stocks from './pages/Stocks';
 
 class Root extends Component {
      constructor(props) {
@@ -28,6 +29,7 @@ class Root extends Component {
                                    <Route path="/crypto" element={<Crypto />} />
                                    <Route path="*" element={<Error />} />
                                    <Route path="/dashboard/:query" element={<Dashboard />} />
+                                   <Route path="/Stocks" element={<Stocks />} />
                               </Routes>
                     </HashRouter>
                </div>
