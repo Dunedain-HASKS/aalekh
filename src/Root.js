@@ -29,7 +29,7 @@ class Root extends Component {
                                    <Route path="/crypto" element={<Crypto />} />
                                    <Route path="*" element={<Error />} />
                                    <Route path="/dashboard/:query" element={<Dashboard />} />
-                                   <Route path="/Stocks" element={<Stocks />} />
+                                   <Route path="/stocks" element={<Stocks />} />
                               </Routes>
                     </HashRouter>
                </div>
