@@ -7,6 +7,7 @@ import About from './pages/About';
 import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
 import Crypto from './pages/Crypto';
+import Stocks from './pages/Stocks';
 
 class Root extends Component {
      constructor(props) {
