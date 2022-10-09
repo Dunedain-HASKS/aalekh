@@ -60,7 +60,7 @@ const stockJSON = [
     }
 ]
 //API_KEYa0YAA28DMC0TTCC58IDVUJPDLRC2NS43
-async function request(props) {
+async function request() {
     const req_string = stockJSON.map((element) => (element.symbol)).join(',');
     const response = await fetch(`https://api.finage.co.uk/last/stocks/?symbols=${req_string}&apikey=API_KEY01RXJQJNDDRT0DA4Y2KQ2IA1VA8P13J5`);
     const data = await response.json();
