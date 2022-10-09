@@ -5,7 +5,7 @@ export default function Navbar(){
     return(
         <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">Aalekh</a>
+          <a className="navbar-brand" href="https://github.com/LosPollosHermanos-HASKS/aalekh">Aalekh</a>
           <button
             className="navbar-toggler"
             type="button"
