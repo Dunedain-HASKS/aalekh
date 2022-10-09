@@ -38,8 +38,9 @@ const stockJSON = [
         img: "https://cdn.mos.cms.futurecdn.net/5StAbRHLA4ZdyzQZVivm2c.jpg"
     },
     {
-        name: "Facebook Inc."
-        , symbol: "FB"
+        name: "Facebook Inc.",
+        symbol: "FB",
+        img: "https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
     },
     {
         name: "AT&T Inc.",
@@ -48,15 +49,18 @@ const stockJSON = [
     },
     {
         name: "Netflix Inc."
-        , symbol: "NFLX"
+        , symbol: "NFLX",
+        img: "https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456"
     },
     {
         name: "Tesla Inc."
-        , symbol: "TSLA"
+        , symbol: "TSLA",
+        img: "https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png"
     },
     {
         name: "Exxon-Mobil Corporation"
-        , symbol: "XOM"
+        , symbol: "XOM",
+        img: "https://1000logos.net/wp-content/uploads/2017/08/ExxonMobil-Logo.png"
     }
 ]
 //API_KEYa0YAA28DMC0TTCC58IDVUJPDLRC2NS43
