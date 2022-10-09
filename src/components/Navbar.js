@@ -26,16 +26,15 @@ export default function Navbar(){
                 <Link className="nav-link" to="/dashboard/world">Dashboard</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">About Us</Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link" to="/crypto"> Crypto </Link>
               </li>
 
               <li className="nav-item">
                 <Link className="nav-link" to="/Stocks"> Stocks </Link>
               </li>
-             
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">About Us</Link>
+              </li>
             </ul>
             
             {/* <form className="d-flex">
