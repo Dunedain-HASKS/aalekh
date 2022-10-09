@@ -1,30 +1,36 @@
-import "./About.css";
+import "../style/App.css";
 
 function About() {
   return (
     <>
-      <div className="about-section">
-        <h1>About Us</h1>
-        <p>Some text about who we are and what we do.</p>
-        <p>
-          Resize the browser window to see that this page is responsive by the
-          way.
-        </p>
+      <div className="about-section abt-image text-dark d-flex flex-column align-items-center ">
+        <div className="bg bg-light bg-opacity-50 w-50 ">
+          <h1 className="display-3">About Us</h1>
+          <p>Some text about who we are and what we do.</p>
+          <p>
+            Resize the browser window to see that this page is responsive by the
+            way.
+          </p>
+        </div>
       </div>
 
-      <h2 className="anuj d-flex flex-column align-items-center text-white">Our Team</h2>
+      <h2 className="anuj d-flex flex-column align-items-center text-white pt-3">
+        Our Team
+      </h2>
 
       <div className="row-1">
         <div className="column">
-          <div className="card">
-            
+          <div className="card pt-3">
             <div className="container">
               <h2>Anuj Contractor</h2>
               <p className="title">Frontend Developer</p>
               <p>We develop what we see</p>
               <p>anu82441@gmail.com</p>
               <p>
-                <form action="https://www.linkedin.com/in/anuj-contractor-60bb3222a/">
+                <form
+                  target="_blank"
+                  action="https://www.linkedin.com/in/anuj-contractor-60bb3222a/"
+                >
                   <button className="button" type="submit">
                     Contact
                   </button>
@@ -35,7 +41,7 @@ function About() {
         </div>
 
         <div className="column">
-          <div className="card">
+          <div className="card pt-3">
             {/* <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> */}
             <div className="container">
               <h2>Harshal Patel</h2>
@@ -43,7 +49,10 @@ function About() {
               <p>We develope what we see.</p>
               <p>harshal2804@gmail.com</p>
               <p>
-                <form action="https://www.linkedin.com/in/harshal-patel-0b61aa24b">
+                <form
+                  target="_blank"
+                  action="https://www.linkedin.com/in/harshal-patel-0b61aa24b"
+                >
                   <button className="button" type="submit">
                     Contact
                   </button>
@@ -53,7 +62,7 @@ function About() {
           </div>
         </div>
         <div className="column">
-          <div className="card">
+          <div className="card pt-3">
             {/* <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> */}
             <div className="container">
               <h2>Keyur Govrani</h2>
@@ -61,7 +70,10 @@ function About() {
               <p>We develope what we see.</p>
               <p>keyurgovrani6912@gmail.com</p>
               <p>
-                <form action="https://www.linkedin.com/in/keyur-govrani-b94277237/">
+                <form
+                  target="_blank"
+                  action="https://www.linkedin.com/in/keyur-govrani-b94277237/"
+                >
                   <button className="button" type="submit">
                     Contact
                   </button>
@@ -74,7 +86,7 @@ function About() {
 
       <div className="row-2">
         <div className="column">
-          <div className="card">
+          <div className="card pt-3">
             {/* <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> */}
             <div className="container">
               <h2>Shivang Kacha</h2>
@@ -82,7 +94,10 @@ function About() {
               <p>We develope what we see.</p>
               <p>shivangkachasbk9@gmail.com</p>
               <p>
-                <form action="https://www.linkedin.com/in/shivang-kacha-1557a3220/">
+                <form
+                  target="_blank"
+                  action="https://www.linkedin.com/in/shivang-kacha-1557a3220/"
+                >
                   <button className="button" type="submit">
                     Contact
                   </button>
@@ -93,7 +108,7 @@ function About() {
         </div>
 
         <div className="column">
-          <div className="card">
+          <div className="card pt-3">
             {/* <img src="/w3images/team3.jpg" alt="John" style="width:100%"> */}
             <div className="container">
               <h2>Soham Viradiya</h2>
@@ -101,7 +116,10 @@ function About() {
               <p>We develope what we see.</p>
               <p>sohamviradiya2003@gmail.com</p>
               <p>
-                <form action="https://www.linkedin.com/in/soham-viradiya-362635226/">
+                <form
+                  target="_blank"
+                  action="https://www.linkedin.com/in/soham-viradiya-362635226/"
+                >
                   <button className="button" type="submit">
                     Contact
                   </button>

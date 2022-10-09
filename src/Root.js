@@ -6,7 +6,7 @@ import Error from './pages/Error';
 import About from './pages/About';
 import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
-import Stocks from './pages/Stocks';
+import Crypto from './pages/Crypto';
 
 class Root extends Component {
      constructor(props) {
@@ -25,6 +25,7 @@ class Root extends Component {
                               <Routes>
                                    <Route path="/" element={<Home />} />
                                    <Route path="/about" element={<About />} />
+                                   <Route path="/crypto" element={<Crypto />} />
                                    <Route path="*" element={<Error />} />
                                    <Route path="/dashboard/:query" element={<Dashboard />} />
                                    <Route path="/Stocks" element={<Stocks />} />
