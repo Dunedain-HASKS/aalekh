@@ -31,7 +31,7 @@ const stockJSON = [
         , symbol: "WMT"
     },
     {
-        name: "Facebook, Inc."
+        name: "Facebook Inc."
         , symbol: "FB"
     },
     {
@@ -39,15 +39,19 @@ const stockJSON = [
         , symbol: "T"
     },
     {
-        name: "Netflix, Inc."
+        name: "Netflix Inc."
         , symbol: "NFLX"
     },
     {
-        name: "Tesla, Inc."
+        name: "Tesla Inc."
         , symbol: "TSLA"
+    },
+    {
+        name: "Exxon-Mobil Corporation"
+        , symbol: "XOM"
     }
 ]
-
+//API_KEYa0YAA28DMC0TTCC58IDVUJPDLRC2NS43
 async function request(props) {
     const req_string = stockJSON.map((element) => (element.symbol)).join(',');
     const response = await fetch(
@@ -84,8 +88,8 @@ function stockCard(stock) {
                         {` ${Date(stock.timestamp).toString().slice(16, 24)}`}
                     </p>
                 </div>
-                
-                <div className="card-footer text-end h4">
+
+                <div className="card-footer text-bg-primary text-end h4">
                         {` ${stock.symbol}`}
                 </div>
 
