@@ -1,4 +1,5 @@
 const GetTodos = (callback) => {
+    console.log(callback);
     const request = new XMLHttpRequest();
     request.addEventListener("readystatechange", () => {
       if (request.readyState === 4 && request.status === 200) {
@@ -20,16 +21,19 @@ const GetTodos = (callback) => {
   console.log("Los Poyos");
   
   GetTodos((err, data) => {
-      const name = data[1].symbol;
-      const value = data[1].bid;
-    console.log("callback fired");
+      let stocks = [];
+      data.forEach(element => {
+        stocks.push({
+            symbol: element.symbol,
+            bid: element.bid
+        })
+      });
+
+    console.log("callback fired",stocks);
     if (err) {
       console.log(err);
     } else {
-      console.log(name);
-      console.log(value);
-      console.log(data);
-      return data;
+      return stocks;
     }
   });
 
